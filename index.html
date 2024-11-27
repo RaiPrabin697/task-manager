@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <input type="text" id="descriptionInput" placeholder="Enter description">
+            <input type="date" id="dateInput">
+            <button id="addTask"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        <div class="filters">
+            <button id="alphabeticalSort"><i class="fas fa-sort-alpha-down"></i> Sort Alphabetically</button>
+            <button id="dateSort"><i class="fas fa-calendar-alt"></i> Sort by Date</button>
+            <button id="clearCompleted"><i class="fas fa-trash"></i> Clear Completed</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
